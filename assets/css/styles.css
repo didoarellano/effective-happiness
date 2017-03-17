@@ -508,19 +508,26 @@ img {
 
 .main-nav {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 77px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999;
   overflow: hidden;
-  transition: all 0.2s; }
+  transition: top 0.4s; }
+  .main-nav .row {
+    height: 100%;
+    display: flex;
+    align-items: center; }
 
 .logo {
-  width: 140px;
+  width: 280px;
   float: left; }
 
 .nav-links {
-  float: right;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   left: 20px; }
   .nav-links a {
@@ -536,12 +543,18 @@ img {
     .nav-links a:hover {
       background: rgba(255, 255, 255, 0.3); }
 
-.main-nav.has-background {
+.main-nav.transition {
+  transition: background 0.2s; }
+
+.main-nav.past-threshold {
   background: #fff;
   border-bottom: 2px solid #06a7f7;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3); }
-  .main-nav.has-background a {
+  .main-nav.past-threshold a {
     color: #444; }
+
+.past-threshold.headroom--unpinned {
+  top: -77px; }
 
 .hero {
   height: 50vh;
