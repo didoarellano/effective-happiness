@@ -21,8 +21,8 @@
       }
     })
 
-    var headroom = new Headroom(navbar)
-    headroom.init()
+    // var headroom = new Headroom(navbar)
+    // headroom.init()
   }
 
   slabText()

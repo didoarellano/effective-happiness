@@ -522,7 +522,7 @@ img {
 
 .logo {
   width: 280px;
-  float: left; }
+  display: block; }
 
 .nav-links {
   width: 100%;
@@ -537,11 +537,11 @@ img {
     margin-right: 5px;
     padding: 5px 20px;
     transition: all 0.2s;
-    border-radius: 4px; }
+    border-bottom: 2px solid transparent; }
     .nav-links a:last-of-type {
       margin-right: 0; }
     .nav-links a:hover {
-      background: rgba(255, 255, 255, 0.3); }
+      border-bottom-color: gold; }
 
 .main-nav.transition {
   transition: background 0.2s; }
@@ -571,8 +571,13 @@ img {
     content: "";
     display: block; }
   .hero .mask {
-    background-color: transparent;
     background-image: url("../img/noise.png"); }
+
+.hero-1 .hero {
+  background-image: url("../img/hero-1.jpg"); }
+
+.hero-2 .hero {
+  background-image: url("../img/hero-2.jpg"); }
 
 @media only screen and (min-width: 600px) {
   .hero {
@@ -680,8 +685,8 @@ img {
   margin-left: 20px;
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  color: #444;
   padding: 20px;
   border-radius: 4px; }
   .program-details h3 {
@@ -691,11 +696,10 @@ img {
   text-decoration: underline; }
 
 .button {
-  min-width: 100px;
-  text-align: center;
-  border: none;
   padding: 10px 20px;
-  display: inline-block;
+  border: none;
+  display: block;
+  text-align: center;
   text-decoration: none;
   background: #06a7f7;
   border-radius: 2px;
@@ -706,8 +710,6 @@ img {
     background: #0585c5;
     padding-left: 25px;
     padding-right: 25px; }
-  .button.register:hover {
-    margin-left: -5px; }
 
 .slabtexted .slabtext {
   display: -moz-inline-box;
@@ -731,7 +733,7 @@ img {
 
 .section-teaser {
   font-style: italic;
-  padding: 10px 0;
+  margin-top: 0;
   color: #aaa; }
 
 .main-nav {
