@@ -503,7 +503,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1; }
 
 .main-nav {
@@ -604,7 +603,8 @@ img {
     z-index: 10;
     position: relative;
     line-height: 0.8;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); }
   .tagline h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
