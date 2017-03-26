@@ -560,23 +560,17 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero-class.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: rgba(255, 255, 255, 0.8); }
+  color: #fff; }
   .hero::after {
     clear: both;
     content: "";
     display: block; }
   .hero .mask {
     background-image: url("../img/noise.png"); }
-
-.hero-1 .hero {
-  background-image: url("../img/hero-1.jpg"); }
-
-.hero-2 .hero {
-  background-image: url("../img/hero-2.jpg"); }
 
 @media only screen and (min-width: 600px) {
   .hero {
@@ -604,7 +598,7 @@ img {
     position: relative;
     line-height: 0.8;
     text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); }
+    text-shadow: 2px 2px 8px #000; }
   .tagline h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -617,7 +611,7 @@ img {
       bottom: 0;
       margin-left: -20%;
       border-bottom: 1px solid #888;
-      background: rgba(255, 255, 255, 0.8); }
+      background: #fff; }
 
 .about {
   margin-top: 40px;
