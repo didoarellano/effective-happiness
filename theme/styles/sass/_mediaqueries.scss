@@ -1,0 +1,73 @@
+///////////////////
+// Media Queries //
+///////////////////
+// Screen sizes
+// $screen-xs: 568px;
+// $screen-sm-landscape: 728px;
+// $screen-sm: 768px;
+// $screen-md: 960px;
+// $screen-lg: 1024px;
+// $screen-lg: 1240px;
+// Retina query (remove when not needed)
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+}
+// Small devices
+@media (min-width: $screen-xs) {
+	.intro-header {
+		background-size: contain;
+	}
+	.intro-message {
+		h1 {
+			font-size: 3.2em;
+		}
+	}
+}
+// Medium devices
+@media (min-width: $screen-sm) {
+	.intro-header {
+		background-position: 100%;
+	}
+	.intro-message {
+		h1 {
+			font-size: 3.2em;
+		}
+		.cta {
+			height: 60px;
+			line-height: 60px;
+			font-size: 20px;
+			max-width: 350px;
+		}
+	}
+}
+// Large devices
+@media (min-width: $screen-md) {
+	.intro-message {
+		h1 {
+			font-size: 4em;
+		}
+	}
+}
+// Largest devices portrait
+@media (min-width: $screen-lg-portrait) {
+	.intro-message {
+		padding-top: 6.5%;
+		padding-bottom: 6.5%;
+		background-color: transparent;
+		h1 {
+			font-size: 4em;
+		}
+		.cta {
+			max-width: 400px;
+		}
+	}
+}
+// Largest devices
+@media (min-width: $screen-lg) {
+
+}
+
+
+
+
+
