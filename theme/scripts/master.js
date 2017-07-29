@@ -27,6 +27,13 @@ var icode = (function() {
 	    });
 	}
 
+	if($('#image-preview-1').length > 0) {
+	    $('#image-preview-1').append('<img src="https://img.youtube.com/vi/dNo_BVzNb28/maxresdefault.jpg"/>');
+	}
+	if($('#image-preview-2').length > 0) {
+	    $('#image-preview-2').append('<img src="https://img.youtube.com/vi/QvyTEx1wyOY/maxresdefault.jpg"/>');
+	}
+
 	return {
 		init: init
 	};

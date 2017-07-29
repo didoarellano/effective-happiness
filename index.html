@@ -175,8 +175,10 @@
                         <div class="col-sm-6">
                             <div class="video-container">
                                 <div class="video-inner">
-                                    <div class="video-object">
-                                        <iframe src="https://www.youtube.com/embed/dNo_BVzNb28" frameborder="0" allowfullscreen></iframe>
+                                    <div class="video-object video-item-yt">
+                                        <!-- <iframe src="https://www.youtube.com/embed/dNo_BVzNb28" frameborder="0" allowfullscreen></iframe> -->
+                                        <div id="image-preview-1"></div>
+                                        <button class="view-video-youtube" data-toggle="modal" data-target="#preview-modal-v-1">Play Video</button>
                                     </div>
                                 </div>
                             </div>
@@ -184,8 +186,10 @@
                         <div class="col-sm-6">
                             <div class="video-container">
                                 <div class="video-inner">
-                                    <div class="video-object">
-                                        <iframe src="https://www.youtube.com/embed/QvyTEx1wyOY" frameborder="0" allowfullscreen></iframe>
+                                    <div class="video-object video-item-yt">
+                                        <!-- <iframe src="https://www.youtube.com/embed/QvyTEx1wyOY" frameborder="0" allowfullscreen></iframe> -->
+                                        <div id="image-preview-2"></div>
+                                        <button class="view-video-youtube" data-toggle="modal" data-target="#preview-modal-v-2">Play Video</button>
                                     </div>
                                 </div>
                             </div>
@@ -308,6 +312,43 @@
     	<p> &copy; 2017. iCode Academy. All Rights Reserved.</p>
     </footer>
 
+
+
+    <div id="preview-modal-v-1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content clearfix">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-body clearfix">
+                    <div class="video-player-modal" class="clearfix">
+                        <div class="video-player-inner">
+                            <iframe src="https://www.youtube.com/embed/dNo_BVzNb28" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="preview-modal-v-2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content clearfix">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-body clearfix">
+                    <div class="video-player-modal" class="clearfix">
+                        <div class="video-player-inner">
+                           <iframe src="https://www.youtube.com/embed/QvyTEx1wyOY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div id="why-code-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -315,7 +356,7 @@
             <div class="modal-content clearfix">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="modal-body clearfix">
-                    <div id="video-player-modal" class="clearfix">
+                    <div class="video-player-modal" class="clearfix">
                         <div class="video-player-inner">
                             <iframe src="https://player.vimeo.com/video/60767036" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
