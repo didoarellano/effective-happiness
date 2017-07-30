@@ -33,6 +33,9 @@ var icode = (function() {
 	if($('#image-preview-2').length > 0) {
 	    $('#image-preview-2').append('<img src="https://img.youtube.com/vi/QvyTEx1wyOY/maxresdefault.jpg"/>');
 	}
+	  $(".navbar-toggle").on("click", function () {
+		    $(this).toggleClass("active");
+	  });
 
 	return {
 		init: init

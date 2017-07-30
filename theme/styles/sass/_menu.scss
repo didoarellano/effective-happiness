@@ -14,7 +14,13 @@
 		>li {
 			>a {
 				padding: 22px 15px;
+				@media (max-width: 768px) {
+					border-bottom: 1px solid #e5e5e5;
 
+					&:last-child {
+						border-bottom: 0 !important;
+					}
+				}
 				&:hover {
 					background-color: #f6f6f6;
 					color: $blue;
@@ -27,5 +33,61 @@
 				}
 			}
 		}
+		@media (max-width: 768px) {
+			float: none !important;
+			background-color: #fff;
+		}
 	}
+	@media (max-width: 768px) {
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 999;
+	}
+
+	.navbar-toggle {
+		background-color: #06a7f7;
+		border: 0;
+		margin-top: 15px;
+		span {
+			color: #fff;
+			background-color: #fff;
+		}
+		@media (max-width: 768px) {
+			&.active {
+				span:nth-child(2) {
+					background-color: transparent !important;
+				}
+			}
+		}
+	}
+}
+
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px !important;
+	  transform: rotate(-45deg);
 }

@@ -18,9 +18,7 @@
 		background-size: contain;
 	}
 	.intro-message {
-		h1 {
-			font-size: 3.2em;
-		}
+		max-width: 100%;
 	}
 }
 // Medium devices
@@ -30,7 +28,7 @@
 	}
 	.intro-message {
 		h1 {
-			font-size: 3.2em;
+			font-size: 3.5em;
 		}
 		.cta {
 			height: 60px;
